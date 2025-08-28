@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Thalys Riquelmy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    body { scroll-behavior: smooth; }
+    .gradient-bg {
+      background: linear-gradient(-45deg, #1e3a8a, #2563eb, #4f46e5, #9333ea);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .icon-hover:hover { transform: scale(1.2) rotate(5deg); transition: all 0.3s ease; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 bg-white/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">TR</h1>
+      <nav class="space-x-6 hidden md:flex font-medium">
+        <a href="#about" class="hover:text-blue-700 transition">Sobre</a>
+        <a href="#experience" class="hover:text-blue-700 transition">Experiência</a>
+        <a href="#skills" class="hover:text-blue-700 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-700 transition">Projetos</a>
+        <a href="#certs" class="hover:text-blue-700 transition">Certificações</a>
+        <a href="#education" class="hover:text-blue-700 transition">Formação</a>
+        <a href="#extras" class="hover:text-blue-700 transition">Extras</a>
+        <a href="#contact" class="hover:text-blue-700 transition">Contato</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow-lg">
+      <nav class="flex flex-col p-4 space-y-2">
+        <a href="#about" class="hover:text-blue-700 transition">Sobre</a>
+        <a href="#experience" class="hover:text-blue-700 transition">Experiência</a>
+        <a href="#skills" class="hover:text-blue-700 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-700 transition">Projetos</a>
+        <a href="#certs" class="hover:text-blue-700 transition">Certificações</a>
+        <a href="#education" class="hover:text-blue-700 transition">Formação</a>
+        <a href="#extras" class="hover:text-blue-700 transition">Extras</a>
+        <a href="#contact" class="hover:text-blue-700 transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-bg text-white py-24 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div data-aos="fade-right">
+        <span class="bg-white/20 px-3 py-1 rounded-full text-sm animate-pulse">🚀 Disponível para oportunidades</span>
+        <h2 class="mt-4 text-5xl font-extrabold">Thalys Riquelmy Martins Cardoso</h2>
+        <p class="mt-2 text-2xl font-light">Desenvolvedor Full-Stack</p>
+        <p class="mt-6 text-blue-100 leading-relaxed">Profissional de desenvolvimento full-stack com experiência em Java, Spring Boot, Angular, Ionic e PostgreSQL. Entusiasta por inovação, segurança e soluções eficientes.</p>
+        <div class="mt-6 flex space-x-4">
+          <a href="mailto:thalysriquelmy8@gmail.com" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold shadow hover:scale-105 transform transition">✉️ Contato</a>
+          <a href="https://github.com/Thalys-Riquelmy" target="_blank" class="bg-blue-900/40 px-6 py-3 rounded-lg font-semibold text-white shadow hover:bg-blue-900/60 hover:scale-105 transform transition">💻 GitHub</a>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl" data-aos="fade-left">
+        <h3 class="text-lg font-semibold mb-4">Contato rápido</h3>
+        <p>📧 thalysriquelmy8@gmail.com</p>
+        <p>📞 (62) 99277-0895</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/thalys-riquelmy-20b3ab231" target="_blank" class="underline">LinkedIn</a></p>
+        <p>💻 <a href="https://github.com/Thalys-Riquelmy" target="_blank" class="underline">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Sobre mim -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-blue-700">Sobre mim</h2>
+    <p class="text-lg leading-relaxed">Sou Thalys Riquelmy, desenvolvedor full-stack autodidata e estudante de Engenharia de Software, 
+      com experiência prática em tecnologias como Java, Spring Boot, Angular, Ionic, SQL e Docker. Atuo no desenvolvimento de soluções web e 
+      mobile com foco em segurança da informação, automação e inteligência artificial. Tenho perfil analítico, proativo e orientado a resultados, com forte compromisso com boas práticas, aprendizado contínuo e entrega de valor em ambientes ágeis e colaborativos.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-8 text-blue-700">Skills Técnicas</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+        <i class="devicon-java-plain text-5xl text-red-600 icon-hover"></i>
+        <p class="mt-2">Java / Spring Boot</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+        <i class="devicon-angular-plain text-5xl text-red-500 icon-hover"></i>
+        <p class="mt-2">Angular / TypeScript</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+        <i class="devicon-ionic-original text-5xl text-blue-500 icon-hover"></i>
+        <p class="mt-2">Ionic / PWA</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+        <i class="devicon-postgresql-plain text-5xl text-blue-700 icon-hover"></i>
+        <p class="mt-2">PostgreSQL / IndexedDB</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+        <i class="devicon-docker-plain text-5xl text-blue-400 icon-hover"></i>
+        <p class="mt-2">Docker</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+        <i class="devicon-git-plain text-5xl text-orange-600 icon-hover"></i>
+        <p class="mt-2">Git / SVN</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-blue-700">Projetos em Destaque</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <i class="devicon-python-plain text-4xl text-yellow-500 icon-hover"></i>
+          <h3 class="font-semibold mt-2">App de Criptografia com IA</h3>
+          <p>Aplicativo mobile para criptografar e compartilhar arquivos com segurança usando IA.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <i class="devicon-python-plain text-4xl text-green-500 icon-hover"></i>
+          <h3 class="font-semibold mt-2">Music Converter</h3>
+          <p>Ferramenta em Python para baixar áudios do YouTube com interface Tkinter.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <i class="devicon-nodejs-plain text-4xl text-green-600 icon-hover"></i>
+          <h3 class="font-semibold mt-2">API Facial Recognition</h3>
+          <p>API escalável para autenticação por reconhecimento facial, sem senha, rápida e segura.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <i class="devicon-spring-plain text-4xl text-green-700 icon-hover"></i>
+          <h3 class="font-semibold mt-2">InnovaTransit</h3>
+          <p>Sistema para gestão de motoristas com Spring Boot + Angular + Ionic, suporte offline e autenticação segura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extras -->
+  <section id="extras" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-8 text-blue-700">Atividades Extras</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">👨‍🏫 Monitoria & Mentoria</h3>
+        <p>Atuei como monitor ajudando colegas em disciplinas de programação e oferecendo mentoria sobre boas práticas de desenvolvimento.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">📚 Participação em Comunidades</h3>
+        <p>Membro ativo em comunidades de desenvolvedores no GitHub e LinkedIn, compartilhando conhecimento e colaborando em projetos open source.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Soft Skills -->
+  <section id="softskills" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-8 text-blue-700">Minhas Soft Skills</h2>
+    <p class="mb-8 text-lg leading-relaxed">
+      Além das minhas habilidades técnicas, também desenvolvi competências comportamentais que considero
+      essenciais para atuar em projetos colaborativos e entregar valor com qualidade:
+    </p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🗣️ Comunicação eficaz</h3>
+        <p>Explico ideias técnicas de forma clara para diferentes públicos.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🤝 Trabalho em equipe</h3>
+        <p>Colaboro bem com desenvolvedores, designers e gestores, sempre visando o resultado coletivo.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🧩 Pensamento crítico</h3>
+        <p>Analiso problemas com lógica e proponho soluções inteligentes e viáveis.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🔄 Adaptabilidade</h3>
+        <p>Me adapto facilmente a mudanças rápidas de tecnologia, escopo e ambiente.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">💡 Empatia</h3>
+        <p>Entendo as necessidades dos usuários e colegas para criar soluções mais humanas.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">⏳ Gestão de tempo</h3>
+        <p>Priorizo tarefas e cumpro prazos sem comprometer a qualidade do trabalho.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🐞 Resolução de problemas</h3>
+        <p>Tenho iniciativa para investigar bugs e propor correções eficazes.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">📚 Aprendizado contínuo</h3>
+        <p>Estou sempre buscando evoluir, estudar novas tecnologias e me atualizar.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🚀 Liderança</h3>
+        <p>Se necessário, inspiro, oriento e tomo decisões mesmo sem cargo formal de líder.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="font-semibold mb-2">🌱 Inteligência emocional</h3>
+        <p>Lido bem com pressão, feedbacks e conflitos de forma construtiva.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificações -->
+  <section id="certs" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-8 text-blue-700">Certificações</h2>
+    <ul class="space-y-4">
+      <li class="bg-white p-6 rounded-xl shadow">Udemy — Java Completo: Programação Orientada a Objetos (Out/2024)</li>
+      <li class="bg-white p-6 rounded-xl shadow">Loiane.training — Angular Avançado, CRUD Angular + Spring, Estruturas de Dados (Mar/2024)</li>
+      <li class="bg-white p-6 rounded-xl shadow">Fundação Bradesco — Administração de Banco de Dados Oracle (Set/2024)</li>
+      <li class="bg-white p-6 rounded-xl shadow">FM2S — Kanban & Gestão de Equipes (Mai/2023)</li>
+      <li class="bg-white p-6 rounded-xl shadow">Dimensão — Inglês, Informática e Marketing Pessoal (2017–2020)</li>
+    </ul>
+  </section>
+
+  <!-- Formação -->
+  <section id="education" class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-blue-700">Formação</h2>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold">Engenharia de Software — UNIALFA</h3>
+        <p class="text-sm text-gray-500">2023 – 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-8 text-blue-700">Contato</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="mailto:thalysriquelmy8@gmail.com" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition hover:-translate-y-2">📧 Email</a>
+      <a href="https://www.linkedin.com/in/thalys-riquelmy-20b3ab231" target="_blank" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition hover:-translate-y-2">🔗 LinkedIn</a>
+      <a href="https://github.com/Thalys-Riquelmy" target="_blank" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition hover:-translate-y-2">💻 GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white py-6 text-center">
+    © 2025 Thalys Riquelmy Martins Cardoso.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
